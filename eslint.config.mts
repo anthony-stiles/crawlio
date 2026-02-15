@@ -3,13 +3,12 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import markdown from "@eslint/markdown";
 import { defineConfig } from "eslint/config";
-import { eslintConfig } from '@crawlio/config/eslint.config.mjs'
+import * as eslintConfig from '@crawlio/config/default/eslint.config.mjs'
 
 export default defineConfig([
   { 
-    files: [ '' ] 
+    extends: [eslintConfig.default]
   },
-  tseslint.configs.recommended,
   { 
     files: ["**/*.md"], 
     plugins: { markdown }, 
