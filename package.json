@@ -5,15 +5,13 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "src/iac/*",
-    "src/config/*",
-    "src/code/models/*"
+    "src/iac",
+    "src/config",
+    "src/code/models"
   ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "tsInit": "sh src/config/default/init.sh \"src/code/models\" \"src/config\"",
-    "init": "npm run tsInit",
     "check": "npm install; npm run build; npm run test"
   },
   "keywords": [],
@@ -31,8 +29,6 @@
     "typescript-eslint": "^8.55.0"
   },
   "dependencies": {
-    "@crawlio/config": "file:src/config/crawlio-config-1.0.0.tgz",
-    "@crawlio/models": "file:src/code/models/crawlio-models-1.0.0.tgz",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.2.3",
     "jiti": "^2.6.1"

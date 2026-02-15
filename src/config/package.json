@@ -10,5 +10,11 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "exports": {
+    "./default/eslint.config.mjs": {
+      "types": "./default/eslint.config.d.mts",
+      "default": "./default/eslint.config.mjs"
+    }
+  },
   "devDependencies": {}
 }

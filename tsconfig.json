@@ -18,19 +18,20 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
     "typeRoots": [
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./types"
     ]
   },
   "include": [
-    "./src",
-    "**/*.ts",
-    "**/*.tsx"
+      "./node_modules/@types",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts"
   ],
   "exclude": [
     "test",
     "node_modules",
-    "dist",
-    "coverage",
+    "**/*.tsx",
     "artifacts",
     "scripts",
     "cdk.out"
