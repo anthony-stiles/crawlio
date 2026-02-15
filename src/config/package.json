@@ -1,0 +1,14 @@
+{
+  "name": "@crawlio/config",
+  "version": "1.0.0",
+  "description": "Any config files needed",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {}
+}
