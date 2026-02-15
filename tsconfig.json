@@ -1,0 +1,38 @@
+{
+  "extends": "./src/config/default/tsconfig.json",
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "./src",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "test",
+    "node_modules",
+    "dist",
+    "coverage",
+    "artifacts",
+    "scripts",
+    "cdk.out"
+  ]
+}
