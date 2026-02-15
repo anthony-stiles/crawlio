@@ -7,7 +7,7 @@ node_modules
 **/node_modules
 *.tgz
 *.d.ts.map
-*.d.js.map
+*.js.map
 
 # CDK asset staging directory
 .cdk.staging
