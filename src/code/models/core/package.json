@@ -1,0 +1,38 @@
+{
+  "name": "@crawlio/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "tspMain": "lib/main.tsp",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
+    "./testing": {
+      "types": "./dist/src/testing/index.d.ts",
+      "default": "./dist/src/testing/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "latest"
+  },
+  "dependencies": {
+    "@crawlio/config": "*"
+  },
+  "devDependencies": {
+    "@typespec/compiler": "latest",
+    "@typespec/library-linter": "latest",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc && npm run build:tsp",
+    "watch": "tsc --watch",
+    "build:tsp": "tsp compile . --warn-as-error --import @typespec/library-linter --no-emit",
+    "test": "node --test 'dist/test/**/*.test.js'",
+    "lint": "eslint src/ test/ --report-unused-disable-directives --max-warnings=0",
+    "lint:fix": "eslint . --report-unused-disable-directives --fix"
+  },
+  "private": true,
+  "packageManager": "npm@11.10.0+sha512.8bc844e37892200305b98562f13c6c10849d10b3387c8cdaeb4d1a2e32746a79063cba9dd284cf28c26a01c3bf4169b7d3b31b4a5586cc970d6749463108073c"
+}

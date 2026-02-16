@@ -1,0 +1,4 @@
+{
+  "extends": "@crawlio/config/default/tsconfig.json",
+  "include": ["src", "test"]
+}

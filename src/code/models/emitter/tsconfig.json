@@ -1,0 +1,9 @@
+{
+  "extends": "@crawlio/config/default/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "test"]
+}
