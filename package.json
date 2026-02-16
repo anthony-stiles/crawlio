@@ -7,8 +7,7 @@
   "workspaces": [
     "src/iac",
     "src/config",
-    "src/code/models/core",
-    "src/code/models/emitter"
+    "src/models"
   ],
   "scripts": {
     "test": "jest",
