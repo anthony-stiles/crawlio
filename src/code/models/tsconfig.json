@@ -1,9 +1,0 @@
-{
-    "include": ["./src", "**/*.ts", "**/*.tsx"],
-    "exclude": ["test", "dist", "node_modules"],
-    "compilerOptions": {
-        "declaration": true,
-        "outDir": "dist",
-        "rootDir": "src"
-    }
-}

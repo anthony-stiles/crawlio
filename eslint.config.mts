@@ -5,7 +5,12 @@ import * as eslintConfig from '@crawlio/config/default/eslint.config.mjs';
 export default defineConfig([
     { 
         files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx', '**/*.mjs', '**/*.mts'],
-        extends: [eslintConfig.default]
+        extends: [eslintConfig.default],
+        languageOptions: {
+            parserOptions: {
+                tsconfigRootDir: import.meta.dirname
+            }
+        }
     },
     { 
         files: ['**/*.md'], 

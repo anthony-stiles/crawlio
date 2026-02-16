@@ -14,7 +14,8 @@
     "./default/eslint.config.mjs": {
       "types": "./default/eslint.config.d.mts",
       "default": "./default/eslint.config.mjs"
-    }
+    },
+    "./default/tsconfig.json": "./default/tsconfig.json"
   },
   "devDependencies": {}
 }

@@ -1,5 +1,5 @@
 {
-  "name": "iac",
+  "name": "@crawlio/iac",
   "version": "0.1.0",
   "bin": {
     "iac": "bin/iac.js"
@@ -20,6 +20,7 @@
     "typescript": "~5.9.3"
   },
   "dependencies": {
+    "@crawlio/config": "*",
     "aws-cdk-lib": "2.215.0",
     "constructs": "^10.0.0"
   }

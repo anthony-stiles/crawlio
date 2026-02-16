@@ -1,6 +1,5 @@
 # Welcome
-#### Introduction
-#### Requirements
+## Introduction
 ## Requirements
 
 * Draw.io Integration
