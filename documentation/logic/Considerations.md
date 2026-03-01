@@ -11,3 +11,5 @@ Using repository library to handle all database transactions
 - [ ] Update README for each repo
 - [ ] Create Github Pages \ 
 https://docs.github.com/en/pages/quickstart
+- [ ] Update Python to support monorepo \
+may have to swtich from uv to poetry
