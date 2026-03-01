@@ -1,0 +1,1 @@
+sh src/config/default/scripts/test.sh
