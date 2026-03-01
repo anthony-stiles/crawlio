@@ -1,23 +1,24 @@
 .vscode
 
 # TS Git
-*.js
 !jest.config.js
 *.d.ts
+*.d.ts.map
+*.js
+*.js.map
+*.tgz
+**/node_modules
 dist
 node_modules
-**/node_modules
-*.tgz
-*.d.ts.map
-*.js.map
 
 #Python Git
-**/.ruff_cache
 *.coverage
-**/htmlcov
-**/.pytest_cache
 **/__pycache__
+**/.mypy_cache
+**/.pytest_cache
+**/.ruff_cache
 **/.venv
+**/htmlcov
 
 # CDK Asset Staging Directory
 .cdk.staging
